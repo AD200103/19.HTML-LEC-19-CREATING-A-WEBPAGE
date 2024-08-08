@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.pagewrapper {
+  height: 200vh;
+}
+.squarespacebutton {
+  position: fixed;
+  width: 243px;
+  height: 76px;
+  background-color: black;
+  right: 11px;
+  top: 87.9%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.foranimation {
+  width: 846px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 282px);
+  grid-template-rows: 1fr;
+}
+.squarspacelogo {
+  position: absolute;
+  color: white;
+  display: flex;
+  align-self: center;
+}
+.foranimation .blackbox {
+  background-color: white;
+  opacity: 0;
+}
+.foranimation .greybox {
+  background-color: white;
+  opacity: 0.2;
+}
+@keyframes henderson {
+  0% {
+  }
+  100% {
+    transform: translateX(282px);
+  }
+}
+@keyframes henderson1 {
+  0% {
+    transform: translateX(282px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.foranimation {
+  animation-name: henderson1;
+  animation-timing-function: linear;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+.foranimation:hover {
+  animation-name: henderson;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.firstsection {
+  position: relative;
+  width: 100%;
+  background-image: url(pickle-perfection-v1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50.13982599431818% 37.639024390243904%;
+  min-height: 100vh;
+}
+.section-background-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #da7e72;
+  opacity: 0.15;
+}
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 19.1%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.06rem;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+header nav[class="info"] {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 47px;
+}
+header nav[class="info"] h1 {
+  font-weight: 500;
+  font-size: 2.12rem;
+  padding-right: 69px;
+}
+header nav {
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  display: flex;
+  gap: 23.1px;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header .info nav[class="shopping"],
+header .info nav[class="shopping"] a {
+  display: flex;
+  line-height: normal;
+  align-items: center;
+  gap: 46px;
+}
+header .info nav[class="shopping"] a[class="shoppingcart"] {
+  gap: 5px;
+  padding-top: 1px;
+}
+.firstsection h1[class="pickle"] {
+  position: absolute;
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 44.9%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  font-weight: 700;
+  font-size: 4.256rem;
+  gap: 30.6px;
+}
+.firstsection h1 button[class="shopnow"] {
+  background-color: rgb(255, 255, 255);
+  width: 38.5%;
+  border: none;
+  color: rgb(223, 124, 109);
+  font-size: 28%;
+  font-weight: 500;
+  line-height: 374%;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.firstsection h1 button[class="shopnow"]:hover {
+  opacity: 0.7;
+  transition: 200ms;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1) {
+  .firstsection h1[class="pickle"] {
+    font-size: 6cqw;
+  }
+}
