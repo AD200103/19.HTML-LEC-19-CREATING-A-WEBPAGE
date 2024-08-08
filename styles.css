@@ -7,10 +7,12 @@
   height: 200vh;
 }
 .squarespacebutton {
+  background-image: url(logo..svg);
+  background-position: center;
+  background-size: cover;
   position: fixed;
   width: 243px;
   height: 76px;
-  background-color: black;
   right: 11px;
   top: 87.9%;
   display: flex;
@@ -27,9 +29,11 @@
 }
 .squarspacelogo {
   position: absolute;
-  color: white;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(225, 5, 5);
   display: flex;
-  align-self: center;
 }
 .foranimation .blackbox {
   background-color: white;
