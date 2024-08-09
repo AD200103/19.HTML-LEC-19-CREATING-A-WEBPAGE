@@ -149,22 +149,25 @@ header .info nav[class="shopping"] a[class="shoppingcart"] {
   font-family: "Poppins", sans-serif;
   align-items: center;
   font-weight: 700;
-  font-size: calc(2rem + 2.5vw);
+  font-size: calc(2.33rem + 2vw);
   text-wrap: nowrap;
-  gap: 30.6px;
+  gap: 0px;
 }
-.firstsection h1 button[class="shopnow"] {
+.firstsection h1 a {
+  width: 38.8%;
+}
+.firstsection h1 a button[class="shopnow"] {
   background-color: rgb(255, 255, 255);
-  width: 38.5%;
+  width: 100%;
   border: none;
   color: rgb(223, 124, 109);
   font-size: 28%;
   font-weight: 500;
-  line-height: 374%;
+  line-height: 377%;
   letter-spacing: 1px;
   cursor: pointer;
 }
-.firstsection h1 button[class="shopnow"]:hover {
+.firstsection h1 a button[class="shopnow"]:hover {
   opacity: 0.7;
   transition: 200ms;
 }
@@ -199,7 +202,7 @@ header .info nav[class="shopping"] a[class="shoppingcart"] {
 }
 
 @media only screen and (max-width: 767px) {
-  .firstsection h1 button[class="shopnow"] {
+  .firstsection h1 a {
     width: 68.5%;
   }
 }
