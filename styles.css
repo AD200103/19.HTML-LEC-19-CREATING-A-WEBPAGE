@@ -113,7 +113,7 @@ header nav[class="info"] {
 header nav[class="info"] h1 {
   font-weight: 500;
   font-size: 2.12rem;
-  padding-right: 69px;
+  padding-right: 92.1px;
 }
 header nav {
   align-items: center;
@@ -149,7 +149,8 @@ header .info nav[class="shopping"] a[class="shoppingcart"] {
   font-family: "Poppins", sans-serif;
   align-items: center;
   font-weight: 700;
-  font-size: 4.256rem;
+  font-size: calc(2rem + 2.5vw);
+  text-wrap: nowrap;
   gap: 30.6px;
 }
 .firstsection h1 button[class="shopnow"] {
@@ -167,9 +168,45 @@ header .info nav[class="shopping"] a[class="shoppingcart"] {
   opacity: 0.7;
   transition: 200ms;
 }
+.burger {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.burgerbar {
+  height: 1px;
+  background-color: white;
+  width: 100%;
+}
+@media only screen and (min-width: 1025px) {
+  .burgerbar,
+  .burger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  header nav[class="first"] a:not(:last-child) {
+    display: none;
+  }
+  header nav[class="info"] h1 {
+    padding-right: 0;
+  }
+  header nav[class="shopping"] a:first-child {
+    display: none;
+  }
+}
 
-@media only screen and (min-width: 800px) and (max-width: 1) {
+@media only screen and (max-width: 767px) {
+  .firstsection h1 button[class="shopnow"] {
+    width: 68.5%;
+  }
+}
+@media only screen and (max-width: 376px) {
   .firstsection h1[class="pickle"] {
-    font-size: 6cqw;
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 41.4px;
   }
 }
